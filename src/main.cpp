@@ -19,7 +19,25 @@ void setup() {
 }
 
 void loop() {
-  strip.setPixelColor(0, 255, 0, 0); // Red`
+  for(int i=0; i<16; i++) {
+    strip.setPixelColor(i, 255, 0, 0); // red
+  }
+  for(int i=16; i<32; i++) {
+    strip.setPixelColor(i, 255,65, 0); // red
+  }
+  for(int i=32; i<48; i++) {
+    strip.setPixelColor(i, 255,165, 0); // red
+  }
+    for(int i=48; i<64; i++) {
+    strip.setPixelColor(i, 0,255, 0); // red
+  
+  }
+    for(int i=64; i<80; i++) {
+    strip.setPixelColor(i, 0,0, 255); // red
+  }
+      for(int i=80; i<96; i++) {
+    strip.setPixelColor(i, 150,0, 255); // red
+  }
   strip.show();  
   Serial.println("Red");
   delay(1000);
